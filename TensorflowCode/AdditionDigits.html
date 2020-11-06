@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+
+</head>
+<body>
+    <h1 style="text-align: center;">Addition</h1>
+    <h2 id='question'><span id='num1'>3</span> + <span id='num2'>2</span> = </h2>
+    <div style = "text-align:center;">
+        <canvas id="canvas" width="280" height="280" style="position:absolute;top:100;left:100;border:8px solid;"></canvas>
+        <canvas id="canvas1" width="280" height="280" style="position:absolute;top: 100;left: 400;border: 8px solid;"></canvas>
+        <img id="canvasimage" style="position:absolute;top:10%;left:52%;width:280;height:280;display:none;">
+        <img id="canvasimage1" style="position:absolute;top:10%;left:52%;width:280;height:280;display:none;">
+        <input type="button" value="Check Answer" id="checker" size="48" style="position:absolute;top:400;left:100;">
+        <input type="button" value="Clear" id="clearer" size="23" style="position:absolute;top:400;left:648;">
+        <input type="button" value="Next Question" id="next" size="23" style="position:absolute;top:245;left:748;">
+        <script src="Mnistdata.js" type="module"></script>
+        <script src="Addition.js" type="module"></script>
+    </div>
+</body>
+</html>
