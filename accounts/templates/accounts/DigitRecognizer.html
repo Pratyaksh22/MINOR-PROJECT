@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Toddler's Class</title>
+    {% load static %}
+
+    <link rel="icon" href="{% static 'images/tclass.jpg' %}">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+
+</head>
+<body style="background-image: url('/static/images/animal.jpg'); background-size:cover">
+    <h1 style="text-align: center;font-size:75; background-color: #d5f5f3; margin:0px 0px 0px 0px;">Digit Writing Practice</h1>
+    <div style = "text-align:center;">
+        <canvas id="canvas" width="280" height="280" style="position:absolute;top:130;left:550;border:8px solid;"></canvas>
+        <img id="canvasimage" style="position:absolute;top:10%;left:52%;width:280;height:280;display:none;">
+        <input type="button" value="Digit Written" id="checker" size="48" style="position:absolute;top:440;left:550;">
+        <input type="button" value="Clear" id="clearer" size="23" style="position:absolute;top:440;left:797;">
+        <h2 style="position:absolute;top:445;left:595"><span id='answer'></span></h2>
+        <script src="{% static 'js/Mnistdata.js' %}" type="module"></script>
+        <script src="{% static 'js/Recognizerscript.js' %}" type="module"></script>
+    </div>
+</body>
+</html>
