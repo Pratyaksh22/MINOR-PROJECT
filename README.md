@@ -2,4 +2,4 @@
 
 
 
-AI, SE and Minor Project
+AI, SE, WT and Minor Project
