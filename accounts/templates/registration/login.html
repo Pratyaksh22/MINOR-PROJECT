@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+
+
+    <title>Toddler Classes - Login</title>
+
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'images/tclass.jpg' %}">
+
+
+</head>
+<body>
+
+<form method="post">
+  <h1>Login Here </h1>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Login">
+    <div id = "have_it" class="d-flex justify-content-center links">
+        <a href="http://127.0.0.1:8000/accounts/password_reset/" class="main-button">Forgot Password?</a> <br> <br>
+      Don't have an account?<a href="/accounts/sign_up"> Sign Up</a>
+    </div>
+</form>
+</body>
+</html>
